@@ -1,0 +1,8 @@
+<form (submit)="login()">
+  <div >
+    <label for="email">Nombre de Usuario</label>
+    <input type="email"  name="email" placeholder="Escribe usuario" [(ngModel)]="loginData.usuario">
+  </div>
+  <button type="submit" >Entrar a Zona Privada</button>
+  <button (click)="loginFB()" >Entrar con Facebook</button>
+</form>
